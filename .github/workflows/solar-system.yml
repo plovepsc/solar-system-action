@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - 'feature/*'
+env:
+  MONGO_URI: 'mongodb+srv://cluster0.vhiyod5.mongodb.net/superdata'
+  MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
+  MONGO_PASSWORD: '${{ secrets.MONGO_PASSWORD }}'
 jobs:
   unit-testing:
     name: Unit Testing
