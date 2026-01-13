@@ -88,7 +88,7 @@ app.get('/ready',   function(req, res) {
     });
 })
 
-app.listen(3001, () => { console.log("Server successfully running on port - " +3001); })
+app.listen(3001, () => { console.log("Server !successfully running on port - " +3001); })
 module.exports = app;
 
 //module.exports.handler = serverless(app)
