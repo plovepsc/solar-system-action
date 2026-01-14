@@ -100,6 +100,6 @@ jobs:
         export IP=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' soler-system-app)
         echo $IP
         echo "Waiting for 15 seconds to let the container start..."
-        wget -q -0 - 172.0.0.1:3000/live |grep live
+        wget -qO - 172.0.0.1:3000/live |grep live
 
         
